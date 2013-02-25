@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="20dip" >
+
+    <ImageView
+        android:id="@+id/song_img"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="4dip"
+        android:src="@drawable/icon_pre_music" />
+
+    <LinearLayout
+        android:id="@+id/song_info"
+        android:layout_width="240dip"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/song_img" >
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="3dip"
+            android:singleLine="true"
+            android:textSize="15dip" />
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="3dip"
+            android:singleLine="true"
+            android:textSize="10dip" />
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/playpause"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_toRightOf="@+id/song_info"
+        android:layout_centerVertical="true"  
+        android:src="@drawable/btn_playback_ic_play_small"
+        android:background="@drawable/btn_playback_small_normal"
+        android:focusable="false"
+        />
+
+</RelativeLayout>

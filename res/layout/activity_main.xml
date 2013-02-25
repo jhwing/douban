@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+
+    <ListView
+        android:id="@+id/song_list"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:descendantFocusability="blocksDescendants"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true" 
+        >
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="play"
+        android:textSize="15dip"
+        android:onClick="play"
+        />
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="pause"
+        android:textSize="15dip"
+        android:onClick="pause"
+        />
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="refresh"
+        android:textSize="15dip"
+        android:onClick="refresh"
+        />
+    </LinearLayout>
+    
+</RelativeLayout>

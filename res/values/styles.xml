@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="Theme.Wallpaper" parent="android:style/Theme.Wallpaper">
+		<item name="android:colorForeground">#fff</item>
+	</style>
+</resources>
